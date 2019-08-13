@@ -249,7 +249,7 @@ func resourceVMCreate(d *schema.ResourceData, meta interface{}) error {
 		err := vbox.CloneHD(src, target)
 		imageOpMutex.Unlock()
 		if err != nil {
-			return errLogf("Clone *.vdi and *.vmdk to VM folder: %v", err)
+			return errLogf("Clone 1111*.vdi and *.vmdk to VM folder: %v", err)
 		}
 	}
 

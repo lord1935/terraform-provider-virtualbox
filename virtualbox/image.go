@@ -42,7 +42,7 @@ func unpackImage(image, toDir string) error {
 		defer fp.Close()
 
 		/* Unpack */
-		// log.Printf("[DEBUG] Unpacking Gold virtual machine into %s\n", toDir)
+		log.Printf("[DEBUG] Unpacking Gold virtual machine into %s\n", toDir)
 		cmd := exec.Command("tar", "-xv", "-C", toDir, "-f", image)
 		cmd.Stdout = os.Stdout
 		cmd.Stderr = os.Stderr
